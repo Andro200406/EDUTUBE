@@ -1,0 +1,298 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav.navbar {
+    background-color: #003366; /* Dark Blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  nav.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav.navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav.navbar .nav-links li {
+    margin-left: 20px;
+  }
+  
+  nav.navbar .nav-links li a {
+    color: #ffcc00; /* Yellow */
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  nav.navbar .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00; /* Yellow */
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+  
+  /* Course Section */
+  .course-section {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .course-section h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 1.5rem;
+  }
+  
+  .course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .course-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-item h3 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-item p {
+    color: #333;
+  }
+  
+  /* Video Section */
+  .video-section {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .video-section h2 {
+    text-align: center;
+    color: #003366; /* Dark Blue */
+    margin-bottom: 1.5rem;
+  }
+  
+  .video-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .video-item {
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background-color: #eaeaea;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial p {
+    color: #333;
+  }
+  
+  .testimonial h4 {
+    color: #003366; /* Dark Blue */
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Contact */
+  .contact {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    color: #003366; /* Dark Blue */
+  }
+  
+  .contact-form {
+    margin-top: 1rem;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form input {
+    border: 2px solid #003366; /* Dark Blue */
+  }
+  
+  .contact-form textarea {
+    border: 2px solid #003366; /* Dark Blue */
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Yellow */
+    color: #003366; /* Dark Blue */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e6b800; /* Slightly darker yellow */
+  }
+  
+  /* Chatbot Styles */
+  .chatbot-container {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    background-color: #003366; /* Dark Blue */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .user {
+    text-align: right;
+    color: #003366; /* Dark Blue */
+  }
+  
+  .bot {
+    text-align: left;
+    color: #ffcc00; /* Yellow */
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chat-input button {
+    padding: 10px;
+    background-color: #003366; /* Dark Blue */
+    color: #ffcc00; /* Yellow */
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #002850; /* Slightly darker blue */
+  }
+  
+  /* Chatbot Trigger Button */
+  .chatbot-trigger {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003366; /* Dark Blue */
+    color: #ffcc00; /* Yellow */
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .chatbot-trigger:hover {
+    background-color: #002850; /* Slightly darker blue */
+  }
+  

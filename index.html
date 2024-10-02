@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edutube - Learn Anything, Anytime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Edutube</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Explore Free Educational Content</h1>
+      <p>High-quality videos, interactive learning, and real-time assistance. Start learning today!</p>
+    </div>
+  </section>
+
+  <!-- Course Section -->
+  <section class="course-section">
+    <h2>Popular Courses</h2>
+    <div class="course-list">
+      <div class="course-item">
+        <h3>Introduction to Artificial Intelligence</h3>
+        <p>Learn the basics of AI, neural networks, and machine learning in this foundational course.</p>
+      </div>
+      <div class="course-item">
+        <h3>Web Development Bootcamp</h3>
+        <p>Become a web developer with hands-on projects in HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="course-item">
+        <h3>Data Science with Python</h3>
+        <p>Master data science concepts with Python, including data analysis, visualization, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>Featured Educational Videos</h2>
+    <div class="video-list" id="videoList">
+      <!-- Videos will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <p>"Edutube has transformed the way I learn. The courses are well-structured, and the AI chatbot makes it easy to get help anytime!"</p>
+        <h4>- Sarah J.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The videos are top-notch, and I love that I can learn at my own pace. It's like having a tutor available 24/7."</p>
+        <h4>- James L.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I completed the Web Development Bootcamp, and now I’m confident to take on real projects. Amazing experience!"</p>
+        <h4>- Emily R.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need further information, feel free to reach out to us!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Chatbot Section -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+      <h4>Edutube Chatbot</h4>
+      <span class="close-btn" id="closeChat">&times;</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <!-- Chat content will be loaded here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Ask me anything...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+  
+  <!-- Chatbot Trigger -->
+  <button class="chatbot-trigger" id="openChatbot">Chat with us</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
